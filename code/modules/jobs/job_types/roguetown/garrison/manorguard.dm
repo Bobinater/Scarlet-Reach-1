@@ -65,10 +65,10 @@
 
 /datum/outfit/job/roguetown/manorguard/footsman/pre_equip(mob/living/carbon/human/H)
 	..()
-	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/maces, 3, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/axes, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/slings, 1, TRUE)
@@ -103,19 +103,15 @@
 		if("Warhammer & Shield")
 			beltr = /obj/item/rogueweapon/mace/warhammer
 			backl = /obj/item/rogueweapon/shield/wood
-			H.mind.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 		if("Axe & Shield")
 			beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
 			backl = /obj/item/rogueweapon/shield/wood
-			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 		if("Halberd")
 			r_hand = /obj/item/rogueweapon/halberd
 			backl = /obj/item/gwstrap
-			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 		if("Greataxe")
 			r_hand = /obj/item/rogueweapon/greataxe
 			backl = /obj/item/gwstrap
-			H.mind.adjust_skillrank(/datum/skill/combat/axes, 1, TRUE)
 	backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1, /obj/item/rope/chain = 1, /obj/item/storage/keyring/guardcastle)
 	H.verbs |= /mob/proc/haltyell
 
