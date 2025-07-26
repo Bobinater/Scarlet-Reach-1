@@ -129,6 +129,7 @@
 	desc = "Thick fur pants made to endure the coldest winds, offering a share of protection from fang and claw of beast or men alike."
 	icon_state = "atgervi_pants"
 	item_state = "atgervi_pants"
+	flags_inv = HIDECROTCH|HIDEBOOB
 	
 /obj/item/clothing/gloves/roguetown/angle/atgervi
 	name = "fur-lined leather gloves"
